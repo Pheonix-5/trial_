@@ -1,0 +1,72 @@
+---
+import Sport from "../components/sport.astro";
+import "../css/style.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Exo+2:wght@100;200;300;400;500;600;700;800&display=swap");
+		</style>
+		<title>Sanskar Sports Club</title>
+	</head>
+	<body>
+		<!-- <div id="preloader">
+			<span>Sanskar Sports Club | &#169; All Right Reserved</span>
+		</div> -->
+
+		<header>
+			<nav>
+				<div class="logo">
+					<a href="https://sanskareducationalgroup.ac.in/"
+						><img src="/logo-seg-1.jpg" alt="clg logo" /></a
+					>
+				</div>
+				<ul class="b_nav">
+					<a href="/"><li class="active">HOME</li></a>
+					<a href="datanotpresent"><li>UPCOMING EVENTS</li></a>
+					<a href="datanotpresent"><li>STANDINGS</li></a>
+					<a href="datanotpresent"><li>CONTACT US</li></a>
+				</ul>
+				<div class="hamburgur_menu" aria-pressed="false">
+					<div class="ham"></div>
+				</div>
+			</nav>
+			<div class="banner">
+				<span>SANSKAR SPORT CLUB</span>
+			</div>
+		</header>
+		<div class="mob_menu" id="mobile_menu" data-visible="false">
+			<ul class="mob_nav">
+				<a href="/"><li class="active">HOME</li></a>
+				<a href="datanotpresent"><li>UPCOMING EVENTS</li></a>
+				<a href="datanotpresent"><li>STANDINGS</li></a>
+				<a href="datanotpresent"><li>CONTACT US</li></a>
+			</ul>
+		</div>
+		<main>
+			<section id="HOME">
+				<div class="about">
+					<span class="quote"
+						>"Sport is not about winning or losing. It's about
+						giving your all."</span
+					>
+					<p></p>
+				</div>
+				<Sport />
+			</section>
+		</main>
+		<footer>
+			<span>Copyright All Right Reserved 2023</span>
+			<span>Designed By - <a href="">Anonymous</a></span>
+		</footer>
+		<script>
+			import "../script/script.js";
+		</script>
+	</body>
+</html>
