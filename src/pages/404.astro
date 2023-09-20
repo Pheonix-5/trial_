@@ -1,11 +1,10 @@
 ---
-import Header from "../components/Header.astro";
 import "../css/style.css";
 ---
 
 <style>
     body {
-        font-family: 'Exo 2', sans-serif;
+        font-family: "Exo 2", sans-serif;
         background: -webkit-repeating-linear-gradient(
             -45deg,
             #f81010,
@@ -136,7 +135,7 @@ import "../css/style.css";
         background: #9f4fe5;
         color: #fff;
     }
-    .maincontent{
+    .maincontent {
         /* background-color: #000; */
         display: flex;
         flex-direction: column;
@@ -144,20 +143,14 @@ import "../css/style.css";
         justify-content: center;
     }
 </style>
-<body>
-    <div class="errorpage">
-        <div class="content">
-            <div class="maincontent">
-                <h1 data-text="ERROR 404">ERROR 404</h1>
-                <h3 data-text="OOPS! DATA NOT FOUND">OOPS! DATA NOT FOUND</h3>
+<div class="errorpage">
+    <div class="content">
+        <div class="maincontent">
+            <h1 data-text="ERROR 404">ERROR 404</h1>
+            <h3 data-text="OOPS! DATA NOT FOUND">OOPS! DATA NOT FOUND</h3>
 
-                <p>
-                    Sorry, the data you're looking for doesn't exist.
-                </p>
-            </div>
-            <div class="bttns"><a href="/">RETURN HOME</a>
-
-            </div>
+            <p>Sorry, the data you're looking for doesn't exist.</p>
         </div>
+        <div class="bttns"><a href="/">RETURN HOME</a></div>
     </div>
-</body> 
+</div>
